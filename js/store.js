@@ -25,7 +25,7 @@ function post(wordInput, wordDefinition) {
     console.log(wordObject);
 
     let xhttp = new XMLHttpRequest();
-    xhttp.open("POST", "http://localhost:8888/", true);
+    xhttp.open("POST", "https://young-peak-97976-264468836b6f.herokuapp.com/", true);
     xhttp.setRequestHeader("Content-type", "application/json");
     xhttp.send(JSON.stringify(wordObject));
 
@@ -53,7 +53,7 @@ function get(input, output) {
     let xhttp = new XMLHttpRequest();
     xhttp.responseText = "response";
 
-    xhttp.open("GET", "http://localhost:8888/?word="+inputText, true);
+    xhttp.open("GET", "https://young-peak-97976-264468836b6f.herokuapp.com/?word="+inputText, true);
 
     xhttp.send(inputText);
 
