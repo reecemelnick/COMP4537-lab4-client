@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search</title>
+    <script src="./js/store.js" defer></script>
+</head>
+<body>
+    <h1>Search</h1>
+    <form action="">
+        <input type="text" id="add-input">
+        <p id="valid-word" style="color: red;"></p>
+        <button type="button" onclick="get('add-input', 'word-def')">Add</button>
+    </form><br><br>
+    <textarea name="definition" id="word-def" readonly></textarea>
+</body>
+</html>
